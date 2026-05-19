@@ -1,18 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 #titulo_principal{
-            background-color: #97da1c;
-            color:white;
+           text-align: center;
  }
-.titulo_secundario{
-             background-color: #1a7e2b;
-             color: white;
-}             
+ 
+#titulo_secundario{
+text-align: right;
+
+}
+
+ h1{
+    color: #ffe556;
+    text-align: center;
+    font-size: 50px;
+ }
+
+ h2{
+    color: #ffe556;
+ }
+ 
+ p{
+    color: white;
+    font-size: 20px;
+ }
+
+ li{
+    color: white;
+    opacity: 4;
+    font-size: 20px;
+ }
+             
+ .imagem-no-canto{
+    float: right;
+
+ }
+
+
 .rodape{
     text-align: center;
 }
 body{
     /*Topografia CSS*/
-    background-color: rgb(0, 0, 0); /*Cor de fundo*/
+    background-color:#00bcf0;
     color: rgb(255, 238, 0); /*Cor da fonte*/
     font-family: "Roboto", sans-serif; /*Fonte do texto*/
     font-size: 16px ; /*Tamanho da fonte - px/em/rem*/
@@ -35,8 +63,8 @@ body{
     border-color: #ffe556;
     border: solid 5px rgb(3, 252, 207); /*Definir estilo espessura e cor da borda numa mesma linha*/
     border-top: solid 10px #ffe556; /*estiliza determinado canto das bordas*/
-    border-bottom: solid 10px #00bcf0;
-    border-left: solid 10px #00bcf0;
+    border-bottom: solid 10px #ffe556;
+    border-left: solid 10px #ffe556;
     border-right: solid 10px #ffe556;
     border-radius: 50px 50px 50px 50px; /*Arredondar cantos da borda px ,% */
     margin: 20px; /*margem do lado de fora da borda*/
@@ -49,135 +77,4 @@ body{
     padding-left: 20px; /*Margem dentro da borda*/
     padding-right: 20px; /*Margem dentro da borda*/
     padding-top: 20px; /*Margem dentro da borda*/
-}
-
-nav a{
-    text-decoration: none;
-    color:white;
-}
-
-nav a:hover{
-    color:black;
-    opacity: 0,7;
-}
-
-.transicao{
-    background-color: white;
-    border: solid 3px red;
-    color: black;
-    width: 300px;
-    height: 300px;
-    transition-duration: 3s; /*define o tempo de transicao*/
-    transition-property: all; /*deifine quais propriedades css iram entrar na transicao*/
-    transition-delay: 1s; /* delay para iniciar a transicao*/
-    transition-timing-function: ease-in; /*ease-in, ease-out, linear, ease, ease-in-out*/ 
-}
-
-.transicao:hover{
-    background-color: rgb(247, 30, 218);
-    width: 600px;
-    color: rgb(255, 255, 255);
-}
-
-#email:focus{
-    background-color: greenyellow;
-    color: aliceblue;
-}
-
-
-#teste_estilo_lista_ul{
-    list-style-type: circle; /*define o estilo de marcador da lista nao ordenada(ul): disc, circle, square, none*/
-
-}
-
-#teste_estilo_lista_ol{
-    list-style-type: decimal; /*define o estilo de marcadores de listas ordenadas: decimal, (upper)lower-roman, greek, alpha*/
-    list-style-image: url('img/seta_direita_vermelha.png');    
-}
-
-li{
-    border: none 3px orange;
-    list-style-position: outside; /*Dizer ao navegador se o marcador da lista faz parte ou nao do texto da lista: insede e outside*/
-    
-
-}
-
-#impacto{
-    background: url('img/senhordosaneis_fundo.jpg');
-    background-image: url('img/senhordosaneis_fundo.jpg'); /* cArrega imagem ao fundo do elemento html*/
-    background-repeat: no-repeat; /*configura a forma como a imagem ira repetir ao fundo do elemento html: repeat(y,x), no-reapet*/
-    background-position: center; /*left, right, top, bottom podendo usar dois ao mesmo tempo*/
-    width: 2000px;
-    height: 1500px;
-    background-size: cover; /*serve para definir como a imagem vai ser exibida ao fundo- contain, cover, px, %, auto*/
-    background-attachment: fixed; /*como a imagem vai lidar com o scroll ao fundo do elemento, scroll e fixed*/
-    text-shadow:none; /*define a sombra do texto*/
-    
-
-}
-
-/*.teste_display{
-    background-color: rgb(255, 9, 202);
-    display: inline-block;
-    width: 500px;}*/
-
-.noticia{
-    border: solid 3px wheat;
-    width: 200px;
-    position: fixed; /*define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute, static*/
-    height: 100px;
-    overflow: visible; /* trata o comportamento de quando por exemplo um texto passa das bordas de um elemento html- visible, hiden , scrol*/
-    box-shadow: 3px 3px 3px red; /*define a sombra de um elemento html de bloco*/
-    
-
-}
-
-.um{
-    background-color: red;
-    top: 0px;
-    left: 50px;
-    z-index: 3; /*define a ordem dos elementos um atras do outro*/
-   
-
-}
-.dois{
-    background-color: green;
-    top: 100px;
-    left: 150px;
-    
-}
-.tres{
-    background-color: blue;
-    top: 200px;
-    left: 250px;
-    
-}
-
-h1{
-    animation-name: multicolor;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards; /*mantem a cor final da animacao*/
-    animation-iteration-count: infinite; /*quantidade de animações*/
-
-}
-
-@keyframes multicolor{
-    from{color: rgb(255, 229, 86);}
-    to{color: #00bcf0;}
-}
-
-.animacao img{
-    display: block;
-    animation: foguete;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes foguete{
-    0%{margin-left: 0%}
-    25%{margin-left: 80%; transform: rotate(0deg)}
-    50%{margin-left: 80%; transform: rotate(-120deg)}
-    75%{margin-left: 0%; transform: rotate(-120deg)}
-    100%{margin-left: 0%; transform: rotate(0deg)}
 }
