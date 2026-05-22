@@ -5,7 +5,25 @@
  
 #titulo_secundario{
 text-align: right;
+}
 
+nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3px;
+}
+
+nav a{
+   text-decoration: solid;
+   color: #ffe556;
+   background-color: black;
+   text-transform: uppercase;
+   padding: 6px;
+   display: inline-flex;
+   border-style: inset;
+   border-width: 5px;
+   
 }
 
  h1{
@@ -34,6 +52,27 @@ text-align: right;
 
  }
 
+ .noticia{
+    border: solid 3px wheat;
+    width: 500px;
+    position: none; /*define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute, static*/
+    height: 400px;
+    overflow: hidden; /* trata o comportamento de quando por exemplo um texto passa das bordas de um elemento html- visible, hiden , scrol*/
+    box-shadow: 3px 3px 3px rgb(229, 245, 6); /*define a sombra de um elemento html de bloco*/
+ }
+
+ .um{
+
+   background-color: rgb(5, 0, 0);
+    top: 1000px;
+    left: 5000px;
+    z-index: 3; /*define a ordem dos elementos um atras do outro*/
+
+
+ }
+
+
+ 
 
 .rodape{
     text-align: center;
