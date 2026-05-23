@@ -52,6 +52,8 @@ nav a{
 
  }
 
+
+
  .noticia{
     border: solid 3px wheat;
     width: 500px;
@@ -59,7 +61,8 @@ nav a{
     height: 400px;
     overflow: hidden; /* trata o comportamento de quando por exemplo um texto passa das bordas de um elemento html- visible, hiden , scrol*/
     box-shadow: 3px 3px 3px rgb(229, 245, 6); /*define a sombra de um elemento html de bloco*/
- }
+   text-align: just;
+   }
 
  .um{
 
@@ -71,7 +74,34 @@ nav a{
 
  }
 
+ table{
 
+   display: flex;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 25px;
+   border-width: 10px;
+   
+ }
+
+ legend{
+
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 25px;
+   border-width: 10px;
+   text-transform: uppercase;
+   color: #ffe556;
+
+ }
+
+ fieldset{
+
+   border: ridge 5px rgb(0, 0, 0);
+   border-top: solid 5px #000000;
+   border-bottom: solid 5px #0c0a00;
+   border-left: solid 5px #070600;
+   border-right: solid 5px #070600; 
+   
+}
  
 
 .rodape{
