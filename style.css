@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 #titulo_principal{
-           text-align: center;
+   text-align: center;
  }
  
 #titulo_secundario{
-text-align: right;
+   text-align: right;
 }
 
 nav{
@@ -36,6 +36,10 @@ nav a{
     color: #ffe556;
  }
  
+ .titulo_preto{
+   color: black;
+ }
+
  p{
     color: white;
     font-size: 20px;
@@ -55,23 +59,35 @@ nav a{
 
 
  .noticia{
-    border: solid 3px wheat;
-    width: 500px;
-    position: none; /*define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute, static*/
-    height: 400px;
-    overflow: hidden; /* trata o comportamento de quando por exemplo um texto passa das bordas de um elemento html- visible, hiden , scrol*/
-    box-shadow: 3px 3px 3px rgb(229, 245, 6); /*define a sombra de um elemento html de bloco*/
-   text-align: just;
+   border: solid 5px #ffe556;
+   width: 400px;
+   position: static; /*define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute, static*/
+   height: 400px;
+   overflow: visible; /* trata o comportamento de quando por exemplo um texto passa das bordas de um elemento html- visible, hiden , scrol*/
    }
 
  .um{
+   text-align: center;
+   background-color: black;
+   top: 1000px;
+   left: 5000px;
+ }
 
-   background-color: rgb(5, 0, 0);
-    top: 1000px;
-    left: 5000px;
-    z-index: 3; /*define a ordem dos elementos um atras do outro*/
+ .dois{
+   text-align: center;
+   background-color:black;
+   top: 1000px;
+   left: 5000px;
+ }
 
-
+ .tres {
+   text-align: center;
+   background-color:black;
+   top: 1000px;
+   left: 5000px;
+   position: right;
+  
+   
  }
 
  table{
@@ -146,4 +162,31 @@ body{
     padding-left: 20px; /*Margem dentro da borda*/
     padding-right: 20px; /*Margem dentro da borda*/
     padding-top: 20px; /*Margem dentro da borda*/
+}
+
+.animacao img {
+   display: block;
+   animation: voar;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes voar {
+   0% {
+      transform: translateX(0) scaleX(1);
+   }
+   49% {
+      transform: translateX(1500px) scaleX(1);
+   }
+   50% {
+      transform: translateX(1500px) scaleX(-1);
+   }
+   /* espelha ao chegar no fim */
+   99% {
+      transform: translateX(0) scaleX(-1);
+   }
+   100% {
+      transform: translateX(0) scaleX(1);
+   }
+   /* volta ao normal */
 }
