@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Invencivel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/Invincible_Season_2_Render.webp">
+
+</head>
+
+<header id="titulo_principal">
+    <img src="img/InvencibleLogoHQ (1).png" class="imagem-centralizada">
+</header>
+</head>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="personagens.html">Personagens principais</a>
+    <a href="Temporadas.html">Avaliação IMDB</a>
+    <a href="Faça.html">Faça seu herói</a>
+
+</nav>
+
+<body>
+    <div class="animacao">
+        <img src="img/voador.png" alt="mark">
+    </div>
+
+    <label for="mensagem" class="titulo_preto">Se você fosse um personagem do mundo de invencivel quais poderes teria?</label><br><br>
+    
+    <form action="processa.php" method="get" autocomplete="off">
+        <label for="nomepessoa" class="titulo_preto">Nome de super-herói</label>
+        <input type="text" name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15" required
+            placeholder="Ex: Blindado"><br><br>
+        
+        <label for="ano" class="titulo_preto">Ano de Nascimento:</label>
+        <input type="number" name="ano" max="2026" min="1900" required placeholder="Ano"><br><br>
+        <fieldset>
+            <legend>Qual é a sua raça?</legend>
+    
+            <input type="radio" name="filme" value="Humano" checked type="Humano" id="Humano" for="Humano">
+            <label for="id" class="titulo_preto">Humano</label>
+    
+            <input type="radio" name="filme" value="Viltrumita" checked type="Viltrumita" id="Viltrumita" for="Viltrumita">
+            <label for="id" class="titulo_preto">Viltrumita</label>
+    
+            <input type="radio" name="filme" value="Thraxano" checked type="Thraxano" id="Thraxano" for="Thraxano">
+            <label for="id" class="titulo_preto">Thraxano</label>
+    
+            <input type="radio" name="filme" value="Marcianos" checked type="Marcianos" id="Marcianos" for="Marcianos">
+            <label for="id" class="titulo_preto">Marcianos</label>
+        </fieldset><br>
+    
+        <label for="filme" class="titulo_preto">Escolha sua temporada favorita</label>
+        <select>
+            <option value="filme 1">Primeira temporada</option>
+            <option value="filme 2">Segunda temporada</option>
+            <option value="filme 3">Terceira temporada</option>
+            <option value="filme 4">Quarta temporada</option>
+        </select><br><br>
+        <label for="local" class="titulo_preto">Escolha seu personagem favorito:</label>
+        <select id="lista_suspensa" name="lista">
+            <optgroup label="Humanos">
+                <option value="Mark">Mark</option>
+                <option value="Eve Atomica">Eve Atômica</option>
+                <option value="Rex-Plosão">Rex-Plosão</option>
+            </optgroup>
+            <optgroup label="Viltrumitas">
+                <option value="Nolan">Nolan</option>
+                <option value="Conquista">Conquista</option>
+                <option value="Thragg">Thragg</option>
+            </optgroup>
+            <optgroup label="Outros">
+                <option value="Debbie">Debbie</option>
+                <option value="Oliver">Oliver</option>
+                <option value="Cecil">Cecil</option>
+                <option value="Allen">Allen</option>
+            </optgroup>
+        </select><br><br>
+        <fieldset>
+            <legend>Seus Poderes</legend>
+            <label class="titulo_preto"><input type="checkbox" name="Super força" value="Super força">Super força</label>
+            <label class="titulo_preto"><input type="checkbox" name="Voar" value="Voar">Voar</label>
+            <label class="titulo_preto"><input type="checkbox" name="Teletransporte" value="Teletransporte">Teletransporte</label>
+            <label class="titulo_preto"><input type="checkbox" name="Super velocidade" value="Super velocidade">Super velocidade</label>
+            <label class="titulo_preto"><input type="checkbox" name="Invisibilidade" value="Invisibilidade">Invisibilidade</label>
+            <label class="titulo_preto"><input type="checkbox" name="Super Inteligencia" value="Super Inteligencia">Super Inteligencia</label>
+            <label class="titulo_preto"><input type="checkbox" name="Telecinese" value="Telecinese">Telecinese</label>
+        </fieldset><br>
+        <label for="nivel" class="titulo_preto">Qual a chance de você vencer um viltrumita (0 a 10)</label>
+        <input type="range" max="10" min="0" id="nivel"><br><br>
+    
+        <label for="Seu Planeta" class="titulo_preto">Planeta de origem</label>
+<input type="text" id="busca_datalist" list="planetas">
+        <datalist id="planetas">
+            <option>Terra</option>
+            <option>Viltrum</option>
+            <option>Talescria</option>
+            <option>Thraxa</option>
+        </datalist><br><br>
+    
+        <label for="cor" class="titulo_preto">Cor do seu uniforme:</label>
+        <input type="color" id="cor" name="cor"><br><br>
+    
+        <label for="arquivo" class="titulo_preto">Envie uma logo para seu uniforme</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+    
+        <label for="mensagem" class="titulo_preto">Descreva sua habilidades, historia e objetivos:</label><br>
+        <textarea cols="30" rows="5" name="descrição" id="descrição" required
+            placeholder="Conte sua história..."></textarea><br><br>
+    
+        <button type="reset">Apagar Herói</button>
+        <button type="submit">Concluir Herói</button><br><br>
+    
+</body>
+</html>

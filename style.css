@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+#titulo_principal{
+   text-align: center;
+ }
+ 
+#titulo_secundario{
+   text-align: right;
+}
+
+nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3px;
+}
+
+nav a{
+   text-decoration: solid;
+   color: #ffe556;
+   background-color: black;
+   text-transform: uppercase;
+   padding: 6px;
+   display: inline-flex;
+   border-style: inset;
+   border-width: 5px;
+   
+}
+
+ h1{
+    color: #ffe556;
+    text-align: center;
+    font-size: 50px;
+ }
+
+ h2{
+    color: #ffe556;
+ }
+ 
+ .titulo_preto{
+   color: black;
+ }
+
+ p{
+    color: white;
+    font-size: 20px;
+ }
+
+ li{
+    color: white;
+    opacity: 4;
+    font-size: 20px;
+ }
+             
+ .imagem-no-canto{
+    float: right;
+
+ }
+
+
+
+ .noticia{
+   border: solid 5px #ffe556;
+   width: 400px;
+   position: static; /*define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute, static*/
+   height: 400px;
+   overflow: visible; /* trata o comportamento de quando por exemplo um texto passa das bordas de um elemento html- visible, hiden , scrol*/
+   }
+
+ .um{
+   text-align: center;
+   background-color: black;
+   top: 1000px;
+   left: 5000px;
+ }
+
+ .dois{
+   text-align: center;
+   background-color:black;
+   top: 1000px;
+   left: 5000px;
+ }
+
+ .tres {
+   text-align: center;
+   background-color:black;
+   top: 1000px;
+   left: 5000px;
+   position: right;
+  
+   
+ }
+
+ table{
+
+   display: flex;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 25px;
+   border-width: 10px;
+   
+ }
+
+ legend{
+
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 25px;
+   border-width: 10px;
+   text-transform: uppercase;
+   color: #ffe556;
+
+ }
+
+ fieldset{
+
+   border: ridge 5px rgb(0, 0, 0);
+   border-top: solid 5px #000000;
+   border-bottom: solid 5px #0c0a00;
+   border-left: solid 5px #070600;
+   border-right: solid 5px #070600; 
+   
+}
+ 
+
+.rodape{
+    text-align: center;
+}
+body{
+    /*Topografia CSS*/
+    background-color:#00bcf0;
+    color: rgb(255, 238, 0); /*Cor da fonte*/
+    font-family: "Roboto", sans-serif; /*Fonte do texto*/
+    font-size: 16px ; /*Tamanho da fonte - px/em/rem*/
+}
+#layout{
+    font-size: 1em; /*Herda o tamanho do pai dele com um multiplicador*/
+    display: flex;
+    flex-direction: column; /*Usado para definir a direção dos elementos que sao filhos de um diplay flex*/
+    font-style: normal; /*Estilo da fonte: italic - normal - oblique*/
+    line-height: 25px; /*Espaçamento de linhas*/
+    font-weight: 400; /*Negrito em CSS 100 a 900 - bold e bolder*/
+    text-transform: none; /*Capitalização do texto upercase, lowecase e captalize*/
+    text-decoration: none; /*Sublinhado de texto: under e overline-double-dashed-dotted-wavy-none*/
+    word-spacing: 5px; /*Espacamento entre palavras*/
+    letter-spacing: none; /*Espacmento entre letras*/
+    text-indent: 20px; /*Espacamento de paragrafo primeira linha*/
+    text-align: justify; /*Alinhamento do texto: left-right-center-justify*/
+    border-style: solid; /*Estilo da borda inset, solid, dashed, dotted, groove, ridge, outset*/
+    border-width: 5px; /*Espessura da borda*/
+    border-color: #ffe556;
+    border: solid 5px rgb(3, 252, 207); /*Definir estilo espessura e cor da borda numa mesma linha*/
+    border-top: solid 10px #ffe556; /*estiliza determinado canto das bordas*/
+    border-bottom: solid 10px #ffe556;
+    border-left: solid 10px #ffe556;
+    border-right: solid 10px #ffe556;
+    border-radius: 50px 50px 50px 50px; /*Arredondar cantos da borda px ,% */
+    margin: 20px; /*margem do lado de fora da borda*/
+    margin-right: 20px; /*margem do lado de fora da borda*/
+    margin-left: 20px; /*margem do lado de fora da borda*/
+    margin-top: 20px; /*margem do lado de fora da borda*/
+    margin-bottom: auto; /*margem do lado de fora da borda*/
+    padding: 20px; /*Margem dentro da borda*/
+    padding-bottom: 20px; /*Margem dentro da borda*/
+    padding-left: 20px; /*Margem dentro da borda*/
+    padding-right: 20px; /*Margem dentro da borda*/
+    padding-top: 20px; /*Margem dentro da borda*/
+}
+
+.animacao img {
+   display: block;
+   animation: voar;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes voar {
+   0% {
+      transform: translateX(0) scaleX(1);
+   }
+   49% {
+      transform: translateX(1500px) scaleX(1);
+   }
+   50% {
+      transform: translateX(1500px) scaleX(-1);
+   }
+   /* espelha ao chegar no fim */
+   99% {
+      transform: translateX(0) scaleX(-1);
+   }
+   100% {
+      transform: translateX(0) scaleX(1);
+   }
+   /* volta ao normal */
+}
